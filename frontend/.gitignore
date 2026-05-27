@@ -1,9 +1,12 @@
+# ==============================
 # Miscellaneous
+# ==============================
 *.class
 *.log
 *.pyc
 *.swp
 .DS_Store
+Thumbs.db
 .atom/
 .build/
 .buildlog/
@@ -12,49 +15,95 @@
 .swiftpm/
 migrate_working_dir/
 
-# IntelliJ related
+# ==============================
+# IntelliJ / VSCode
+# ==============================
 *.iml
 *.ipr
 *.iws
 .idea/
+.vscode/
 
-# The .vscode folder contains launch configuration and tasks you configure in
-# VS Code which you may wish to be included in version control, so this line
-# is commented out by default.
-#.vscode/
-
-# Flutter/Dart/Pub related
+# ==============================
+# Flutter / Dart / Pub
+# ==============================
 **/doc/api/
 **/ios/Flutter/.last_build_id
+
 .dart_tool/
 .metadata
 .flutter-plugins
 .flutter-plugins-dependencies
 .pub-cache/
 .pub/
-/build/
+build/
 
-# Symbolication related
-app.*.symbols
+# Flutter frontend build folders
+frontend/build/
+frontend/.dart_tool/
 
-# Obfuscation related
-app.*.map.json
-
-# Android Studio will place build artifacts here
+# ==============================
+# Android Studio
+# ==============================
 /android/app/debug
 /android/app/profile
 /android/app/release
 
+# ==============================
+# Python / Django
+# ==============================
 venv/
+env/
+ENV/
 backend/venv/
-__pycache__/
-*.pyc
-.env
-build/
-
-frontend/build/
-frontend/.dart_tool/
-frontend/.idea/
 frontend/venv/
 frontend/env/
+
+__pycache__/
+*.py[cod]
+
+# Environment files
+.env
+*.env
+backend/.env
+
+# SQLite database
+db.sqlite3
+
+# Django media/static generated files
+media/
+staticfiles/
+
+# ==============================
+# AI / Training Files
+# ==============================
+.ipynb_checkpoints/
+
+# Ignore notebook containing secrets
+vidgenie-training/Fine_Tuning.ipynb
+
+# ML model files
+*.h5
+*.pt
+*.pth
+*.ckpt
+
+# ==============================
+# Generated Media
+# ==============================
+*.mp4
+*.mp3
+*.wav
+*.avi
+
+# ==============================
+# Secret / Credential Files
+# ==============================
+credentials.json
+token.json
+secrets.json
+
+# ==============================
+# Optional Large Dataset Folders
+# ==============================
 frontend/vidgenie-training/
